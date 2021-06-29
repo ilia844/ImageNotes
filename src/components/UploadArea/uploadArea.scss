@@ -1,0 +1,33 @@
+@import '../../assets/scss/variables';
+
+.upload-area {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  outline: none;
+
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 300;
+  color: $white;
+  border-radius: $border-radius;
+  border: 3px dashed $dark-green;
+  transition: all $transition ease;
+
+
+  &:active {
+    outline: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $light-grey;
+    box-shadow: 0 0 3px $white inset;
+  }
+
+  &__placeholder {
+    margin: 0;
+  }
+}

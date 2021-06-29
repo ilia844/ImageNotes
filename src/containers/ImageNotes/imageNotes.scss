@@ -1,0 +1,27 @@
+@import '../../assets/scss/variables';
+
+.main-section {
+  width: 100%;
+  flex-grow: 1;
+
+  background-color: $dark-blue;
+}
+
+.work-area {
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .work-area {
+    padding: 0;
+
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+}

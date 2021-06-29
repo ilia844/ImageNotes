@@ -1,0 +1,32 @@
+@import '../../assets/scss/variables';
+
+.btn {
+  border-radius: $border-radius;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 14px;
+  color: $white;
+  background-color: $dark-green;
+  border: 1px solid $light-grey;
+  box-shadow: 1px 1px 0 $light-grey;
+
+  &_invert {
+    @extend .btn;
+    color: $dark-grey;
+    background-color: $white;
+    border: 1px solid $dark-green;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.95) translate(1px, 1px);
+    box-shadow: none;
+  }
+}
